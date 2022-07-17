@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/round_background"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logoapp"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logoapp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:layout_gravity="center_horizontal">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+
+            <LinearLayout
+                android:id="@+id/notif"
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/gray_rounded"
+                tools:ignore="OnClick">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_notifications_24"/>
+                <TextView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/notifID"
+                    android:onClick="goTonotif"
+                    android:fontFamily="@font/myfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/color2"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Notifications"/>
+
+            </LinearLayout>
+            <LinearLayout
+
+
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/gray_rounded">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_question_answer_24"/>
+                <TextView
+                    android:onClick="goToFaq"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/faqID"
+                    android:fontFamily="@font/myfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/color2"
+                    android:layout_gravity="center"
+                    android:paddingLeft="60dp"
+                    android:text="FAQ"/>
+
+            </LinearLayout>
+            <LinearLayout
+
+
+                android:id="@+id/history"
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/gray_rounded">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_history_24"/>
+                <TextView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="goToHistroy"
+                    android:fontFamily="@font/myfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/color2"
+                    android:layout_gravity="center"
+                    android:paddingLeft="45dp"
+                    android:text="History"/>
+
+            </LinearLayout>
+            <LinearLayout
+
+
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/darker_rounded">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_call_24"/>
+                <TextView
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="goToSos"
+                    android:id="@+id/sosID"
+                    android:fontFamily="@font/myfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/color1"
+                    android:layout_gravity="center"
+                    android:paddingLeft="60dp"
+                    android:text="SOS"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/round_background"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+            <Button
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/Button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/myfont"
+                android:background="@drawable/darker_rounded"
+                android:text="Add Emergency Contact "
+                android:textColor="@color/color1" />
+
+            <ListView
+                android:id="@+id/ListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+        </LinearLayout>
+        <Button
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/backHome_sos"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/darker_rounded"
+            android:fontFamily="@font/myfont"
+            android:text="Back to home"
+            android:textColor="@color/color1"
+            android:textSize="20dp"/>
+
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/round_background"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:id="@+id/logoapp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:outlineAmbientShadowColor="@color/black"
+            android:paddingTop="20dp"
+            android:src="@drawable/no_history">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/myfont"
+            android:text="No fall recorded!"
+            android:textColor="@color/color1"
+            android:textSize="40dp"/>
+        <Button
+            android:id="@+id/backHome_history"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/darker_rounded"
+            android:fontFamily="@font/myfont"
+            android:text="Back to home"
+            android:textColor="@color/color1"
+            android:textSize="20dp"/>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>
